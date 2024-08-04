@@ -44,7 +44,7 @@ There are a number of ways to contribute to Kubeflow:
 - File issues reporting bugs or providing feedback
 - Answer questions on Slack or GitHub issues
 
-You can use this [table](http://devstats.kubeflow.org/d/9/developers-summary) to see how many contributions you've made.
+You can use this [table](https://kubeflow.devstats.cncf.io/d/9/developer-activity-counts-by-repository-group-table?orgId=1) to see how many contributions you've made.
 
 - **Note**: This only counts GitHub related ways of contributing
 
@@ -55,7 +55,6 @@ When you are ready to join
   for more information about artifacts to include with your PR and how to test your PR.
 - After the PR is merged an admin will send you an invitation
   - This is a manual process that's generally run a couple of times a week
-  - If a week passes without receiving an invitation reach out on [kubeflow#community](https://kubeflow.slack.com/messages/C8Q0QJYNB/convo/CABQ2BWHW-1544147308.002500/)
 
 ### Companies/organizations
 

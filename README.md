@@ -41,13 +41,19 @@ This section will show you how to develop the website locally, by running a loca
 
 To install Hugo, follow the [instructions for your system type](https://gohugo.io/getting-started/installing/).
 
-**NOTE:** we recommend that you use Hugo version `0.119.0`, as this is currently the version we deploy to Netlify.
+**NOTE:** we recommend that you use Hugo version `0.124.1`, as this is currently the version we deploy to Netlify.
 
 For example, using homebrew to install hugo on macOS or linux:
 
 ```bash
-# WARNING: this may install a newer version than `0.119.0`
-brew install hugo
+# WARNING: using `brew install hugo` will install the latest version of hugo
+#          which may not be compatible with the website
+
+# TIP: to install hugo run the following commands
+HOMEBREW_COMMIT="9d025105a8be086b2eeb3b1b2697974f848dbaac" # 0.124.1
+curl -fL -o "hugo.rb" "https://raw.githubusercontent.com/Homebrew/homebrew-core/${HOMEBREW_COMMIT}/Formula/h/hugo.rb"
+brew install ./hugo.rb
+brew pin hugo
 ```
 
 ### Install Node Packages
@@ -167,8 +173,8 @@ You can override the default styles and add new ones:
 
 Styling of images:
 
-* To see some examples of styled images, take a look at the [OAuth setup page](https://www.kubeflow.org/docs/gke/deploy/oauth-setup/) in the Kubeflow docs. 
-  Search for `.png` in the [page source](https://raw.githubusercontent.com/kubeflow/website/master/content/en/docs/gke/deploy/oauth-setup.md).
+* To see some examples of styled images, take a look at the [OAuth setup page](https://googlecloudplatform.github.io/kubeflow-gke-docs/docs/deploy/oauth-setup/) in the Kubeflow docs. 
+  Search for `.png` in the [page source](https://raw.githubusercontent.com/GoogleCloudPlatform/kubeflow-gke-docs/main/content/en/docs/deploy/oauth-setup.md).
 
 * For more help, see the guide to
   [Bootstrap image styling](https://getbootstrap.com/docs/4.0/content/images/).
